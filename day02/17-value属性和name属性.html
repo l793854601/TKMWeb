@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        value：用户输入的内容，提交之后会发送给后端服务器
+        name：当前控件的含义，提交之后可以告诉后端发送过去的数据是什么含义
+
+        后端接收到数据的格式为：name的属性值=value的属性值
+     -->
+     <form>
+        <div>昵称：<input type="text", placeholder="请输入昵称" value="tkm" name="nickname"></div>
+        <div><input type="submit"></div>
+        <div><input type="reset"></div>
+     </form>
+</body>
+</html>

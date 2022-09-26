@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- 
+            1.文本框（type：text）
+            placeholder：占位符，提示用户输入内容的文本
+        -->
+        <p>昵称：<input type="text" placeholder="请输入昵称"></p>
+
+        <!-- 2.密码框（type：password） -->
+        <p>密码：<input type="password" placeholder="请输入密码"></p>
+
+        <!-- 注意点：如果type值写错了，则会变成默认值（text） -->
+        <!-- 密码：<input type="password " placeholder="请输入密码"> -->
+        
+        <!-- 
+            3.单选框（type：radio）
+            name：分组，有相同name属性值的单选框为一组，一组中同事只能有一个被选中
+            checked：默认选中
+        -->
+        <p>
+                性别：<input type="radio" name="gender">男 
+                     <input type="radio" name="gender">女
+                     <input type="radio" name="gender" checked>保密
+        </p>
+
+        <!-- 
+            4.复选框（type：checkbox）
+            name：分组
+            checked：默认选中
+        -->
+        <p>
+                爱好：<input type="checkbox" name="hobby" checked>吃饭
+                    <input type="checkbox" name="hobby">睡觉
+                    <input type="checkbox" name="hobby">写代码
+        </p>
+
+        <!-- 
+            5.文件选择（type：file）
+            multiple：多文件选择
+        -->
+        <p><input type="file" multiple></p>
+
+        <!-- 
+            6.按钮（type：submit、reset、button）
+            submit：提交
+            reset：重置
+            button：普通按钮（需要设置value属性，以设置按钮标题）
+
+            注意点：如果需要实现以上按钮功能，需要配合form标签使用
+            form使用方法：用form标签把表单标签一起包裹起来
+            -->
+       <p>
+            <input type="submit">
+            <input type="reset">
+            <input type="button" value="普通按钮">
+       </p>
+    </form>
+</body>
+</html>

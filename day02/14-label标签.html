@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        label标签
+
+        场景：常用语绑定内容与表单标签的关系（比如扩大点击区域）
+
+        标签名：label
+
+        使用方法1：
+        使用label标签把内容（比如文本）包裹起来
+        在表单标签上添加id属性
+        在label标签的for属性中设置对应的id值属性
+
+        使用方法2：
+        直接使用label标签把内容（比如文本）喝表单标签一起包裹起来
+        需要把label标签的for属性删除即可
+
+     -->
+
+     <p>
+        爱好：
+        <!-- 第一种 -->
+        <input type="checkbox" name="hobby" id="eat"><label for="eat">吃饭</label>
+        <!-- 第二种 -->
+        <label><input type="checkbox" name="hobby">睡觉</label>
+     </p>
+</body>
+</html>
