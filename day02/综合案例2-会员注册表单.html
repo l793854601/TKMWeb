@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>青春不常在，抓紧谈恋爱</h1>
+    <hr>
+    <form>
+        <!-- 昵称 -->
+        <p>昵称：<input type="text" placeholder="请输入昵称"></p>
+        <!-- 性别 -->
+        <p>
+            性别：
+            <label><input type="radio" name="gender">男</label>
+            <label><input type="radio" name="gender">女</label>
+        </p>
+        <!-- 生日 -->
+        <p>
+            生日：
+            <input type="date">
+        </p>
+        <!-- 城市 -->
+        <p>
+            城市：
+            <select>
+                <option name="city">北京</option>
+                <option name="city" selected>上海</option>
+                <option name="city">广州</option>
+                <option name="city">深圳</option>
+            </select>
+        </p>
+        <!-- 婚姻状况 -->
+        <p>
+            婚姻状况：
+            <label><input type="radio" name="marriage" checked>未婚</label>
+            <label><input type="radio" name="marriage">已婚</label>
+            <label><input type="radio" name="marriage">保密</label>
+        </p>
+        <!-- 兴趣爱好 -->
+        <p>
+            兴趣爱好：
+            <label><input type="checkbox" name="bobby" checked>抽烟</label>
+            <label><input type="checkbox" name="bobby" checked>喝酒</label>
+            <label><input type="checkbox" name="bobby">烫头</label>
+        </p>
+        <!-- 个人介绍 -->
+        <p>
+            个人介绍：
+            <p><textarea cols="50" rows="10"></textarea></p>
+        </p>
+
+        <!-- 我承诺 -->
+        <h2>我承诺</h2>
+        <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真诚寻找另一半</li>
+        </ul>
+
+        <!-- 同意条款 -->
+        <p>
+            <input type="checkbox" id="agreement"><label for="agreement">我同意所有条款</label>
+        </p>
+
+        <p>
+            <!-- 免费注册（提交） -->
+            <input type="submit" value="免费注册">
+            <!-- 重置 -->
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
