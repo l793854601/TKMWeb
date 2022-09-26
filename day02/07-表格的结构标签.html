@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        thread：表格头部
+        tbody：表格主体
+        tfoot：表格底部
+
+        注意点：
+        表格结构标签内部用于包裹tr标签
+        表格的结构标签（thead、tbody、tfoot）可以省略
+     -->
+     <table border="1", width="300", height="300">
+        <caption><h3>学生成绩单</h3></caption>
+        <!-- 表格的头部 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </th>
+        </thead>
+        <!-- 表格的身体 -->
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <td>100分</td>
+                <td>小哥哥真帅</td>
+            </tr>
+            <tr>
+                <td>小姐姐</td>
+                <td>100分</td>
+                <td>小姐姐真美</td>
+            </tr>
+        </tbody>
+        <!-- 表格的底部 -->
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td>200分</td>
+                <td>郎才女貌</td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>

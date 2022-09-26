@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        合并单元格：将水平或者垂直多个单元格合并成一个单元格
+        跨行合并：垂直合并成一个
+        跨列合并：水平合并成一个
+
+        合并单元格步骤：
+        明确合并哪几个单元格
+        通过左上原色，确定保留谁删除谁
+        给保留的单元格设置：跨行合并（rowspan），或者跨列合并（colspan）
+
+        rowspan：合并单元格的个数（一共占多少行），跨行合并，将多行的单元格垂直合并
+        colspan：合并单元格的个数（一共占多少列），跨列合并，将多猎的单元格水平合并
+
+        注意点：只有一个结构标签中的单元格才能合并，不能跨结构标签合并（不能跨thead、tbody、tfoot）
+     -->
+    <table border="1" width="300", height="300">
+        <caption><h3>学生成绩单</h3></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小哥哥</td>
+                <!-- 跨行合并 -->
+                <td rowspan="2">100分</td>
+                <td>小哥哥真帅</td>
+            </tr>
+            <tr>
+                <td>小姐姐</td>
+                <!-- 删除 -->
+                <!-- <td>100分</td> -->
+                <td>小哥哥真美</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <!-- 跨列合并 -->
+                <td colspan="2">郎才女貌</td>
+                <!-- 删除 -->
+                <!-- <td>郎才女貌</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
