@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p选择器 */
+        p {
+            color: red;
+        }
+        
+        /* div选择器 */
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 要求：让下面的四个标签颜色变成红色 -->
+    <p>我是p标签1</p>
+    <p>我是p标签2</p>
+    <div>我是div标签1</div>
+    <div>我是div标签2</div>
+    
+    <!-- 无论标签嵌套层级多深，标签选择器都能找到对应的标签 -->
+    <div>
+        <div>
+            <div>
+                <div>
+                    <p>你这p标签挺能藏啊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

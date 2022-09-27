@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red {
+            color: red;
+        }
+
+        #green {
+            color: green;
+        }
+
+        #font17 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="red">红果果</p>
+    <p id="green">绿泡泡</p>
+    <div id="red">又一个红果果</div>
+    <p id="green">又一个绿泡泡</p>
+    <!-- 一个标签上只能写一个id属性值，因此以下样式无效 -->
+    <p id="green font17">不规范的id选择器</p>
+</body>
+</html>

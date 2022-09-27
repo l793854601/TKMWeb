@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器的优先级高于标签选择器 */
+        p {
+            color: blue;
+            background-color: black;
+        }
+        
+        .red {
+            color: red;
+            background-color: white;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .pink {
+            color: pink;
+            background-color: white;
+        }
+
+        .font17 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">小红</p>
+    <p class="yellow">小黄</p>
+    <!-- 一个标签可以同时有多个类名，类名之间以空格隔开 -->
+    <p class="pink font17">小粉1</p>
+    <!-- 类名可以重复使用，一个类选择器可以同时选中多个标签 -->
+    <p class="pink font17">小粉2</p>
+</body>
+</html>
