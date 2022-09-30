@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            /* 区别于行内元素，行内块元素可以手动设置宽高 */
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="submit">
+    <!-- img具有行内块元素的特点，但在Chrome调试工具中显示，其display为inline -->
+    <img src="./Chisato.jpg" alt="" width="100px" height="100px">
+</body>
+</html>

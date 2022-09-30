@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 在.father的后代中，找到p标签 */
+        .father p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求：只让小姐姐变红（不改变html结构） -->
+    <!-- 解决：在.father这个div的后代中找到p标签即可 -->
+    <div class="father">
+        <p>小姐姐</p>
+        <div>
+            <p>小哥哥</p>
+        </div>
+    </div>
+    <p>小可爱</p>
+</body>
+</html>

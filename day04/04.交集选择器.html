@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            color: red;
+        } */
+
+        /* .red {
+            color: red;
+        } */
+
+        /* 交集选择器中如果有标签选择器，则标签选择器必须写在最前面 */
+        p.red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求：只让小可爱变红（不能改变html结构） -->
+    <!-- 解决：找到页面中，即是p标签，又是red这个类名的标签，设置样式 -->
+    <div class="red">小姐姐</div>
+    <p>小哥哥</p>
+    <p class="red">小可爱</p>
+</body>
+</html>
