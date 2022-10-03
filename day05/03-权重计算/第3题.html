@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 权重叠加每位不存在进制（12不会满10进1，每一位都是独立的） */
+        /* 0, 0, 0, 12 */
+        div div div div div div div div div div div div {
+            color: red;
+        }
+
+        /* 0, 0, 1, 0 */
+        .one {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <div class="one">这行文本是什么颜色的？</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

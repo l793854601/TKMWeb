@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 全是继承的情况 */
+
+        /* 继承，但可以直接选中p标签 */
+        div p {
+            color: red;
+        }
+
+        /* 继承，但不可以直接选中p标签 */
+        .father {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <!-- p标签 -->
+        <p class="son">
+            <!-- 
+                span的样式是继承得来的（p）
+             -->
+            <span>文字</span>
+        </p>
+    </div>
+</body>
+</html>

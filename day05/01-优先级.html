@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        继承<通配符<标签选择器<类选择器<id选择器<行内样式<!importance
+     -->
+    <style>
+        /* !important，优先级最高 */
+        p {
+            color: purple !important;
+        }
+
+        /* id选择器>类选择器 */
+        #one {
+            color: skyblue;
+        }
+
+        /* 类选择器>标签选择器 */
+        .class {
+            color: orange;
+        }
+
+        /* 标签选择器>通配符 */
+        p {
+            color: blue;
+        }
+
+        /* 通配符>继承 */
+        * {
+            color: greenyellow;
+        }
+
+        /* 继承 */
+        .father {
+            /* !important不能提升继承的优先级 */
+            color: red !important;
+        }
+
+        div {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        我是一个div标签
+        <!-- 行内样式>id选择器 -->
+        <p class="class" id="one" style="color: pink;">我是一个p标签</p>
+    </div>
+</body>
+</html>
