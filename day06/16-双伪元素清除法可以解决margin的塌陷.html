@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background-color: blue;
+        }
+
+        /* 双伪元素不仅可以清除浮动，而且可以解决margin塌陷的问题 */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

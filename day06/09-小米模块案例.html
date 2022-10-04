@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* 本质为上下外边距为0，左右居中 */
+            margin: 0 auto;
+            width: 1226px;
+            height: 614px;
+        }
+
+        .left {
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: #800080;
+        }
+
+        .right {
+            float: right;
+            width: 978px;
+            height: 614px;
+            margin-left: 14px;
+        }
+
+        .item {
+            float: left;
+            width: 234px;
+            height: 300px;
+            /* 先给每个item都设置右边距、下边距 */
+            margin-right: 14px;
+            margin-bottom: 14px;
+            background-color: #87ceeb;
+        }
+
+        /* 去掉每行最后一个item的右边距 */
+        .box .right div:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        /* 去掉最后一行item的下边距 */
+        .box .right div:nth-child(n+5) {
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除默认的margin、padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 主体，沾满一行 */
+        .nav {
+            border-bottom: 1px solid #ccc;
+            height: 42px;
+            box-sizing: border-box;
+        }
+
+        /* 标签语义化：使用ul编写导航 */
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        ul li {
+            float: left;
+            width: 20%;
+            height: 42px;
+            box-sizing: border-box;
+            border-right: 1px solid #ccc;
+        }
+
+        li:last-child {
+            border-right: 0px;
+        }
+
+        ul li a {
+            float: left;
+            width: 240px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+
+            text-decoration: none;
+            font-size: 16px;
+            color: #000;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#">手机微金所</a></li>
+            <li><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

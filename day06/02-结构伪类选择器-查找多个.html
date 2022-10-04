@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.找到偶数个li */
+        /* li:nth-child(even) {
+            background-color: orange;
+        } */
+
+        /* li:nth-child(2n) {
+            background-color: orange;
+        } */
+
+        /* 2.找到奇数个li */
+        /* li:nth-child(odd) {
+            background-color: orange;
+        } */
+
+        /* li:nth-child(2n+1) {
+            background-color: blue;
+        } */
+
+        /* li:nth-child(2n-1) {
+            background-color: blue;
+        } */
+
+        /* 3.找到前5个元素 */
+        /* li:nth-child(-n+5) {
+            background-color: orange;
+        } */
+
+        /* 4.找到从第五个往后的元素 */
+        li:nth-child(n+5) {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是第1个li标签</li>
+        <li>我是第2个li标签</li>
+        <li>我是第3个li标签</li>
+        <li>我是第4个li标签</li>
+        <li>我是第5个li标签</li>
+        <li>我是第6个li标签</li>
+        <li>我是第7个li标签</li>
+        <li>我是第8个li标签</li>
+        <li>我是第9个li标签</li>
+        <li>我是第10个li标签</li>
+    </ul>
+</body>
+</html>

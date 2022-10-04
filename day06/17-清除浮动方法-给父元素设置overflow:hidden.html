@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* overflow:hidden不仅可以清除浮动，还能解决margin塌陷问题 */
+        .father {
+            overflow: hidden;
+            width: 400px;
+            background-color: pink;
+        }
+
+        .son {
+            float: left;
+            width: 100px;
+            height: 400px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

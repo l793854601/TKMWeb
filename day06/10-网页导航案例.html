@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.清除默认的margin与padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2.找到ul标签，去掉小圆点 */
+        ul {
+            list-style: none;
+        }
+
+        /* 3.找到li标签，设置浮动 */
+        ul li {
+            float: left;
+            width: 80px;
+            height: 50px;
+        }
+
+        /* 4.找到a标签，设置宽高 */
+        ul li a {
+            /* a标签是行内元素，默认不能设置宽高 */
+            /* 方式1：转换成块内元素 */
+            /* display: inline-block; */
+
+            /* 方式2：转换成块级元素 */
+            /* display: block; */
+
+            /* 方法3：设置浮动 */
+            float: left;
+            width: 80px;
+            height: 50px;
+
+            text-decoration: none;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            background-color: #ffc0cb;
+        }
+
+        ul li a:hover {
+            background-color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签语义化：使用无序表格完成导航 -->
+    <ul>
+        <li><a href="#">新闻1</a></li>
+        <li><a href="#">新闻2</a></li>
+        <li><a href="#">新闻3</a></li>
+        <li><a href="#">新闻4</a></li>
+        <li><a href="#">新闻5</a></li>
+        <li><a href="#">新闻6</a></li>
+        <li><a href="#">新闻7</a></li>
+        <li><a href="#">新闻8</a></li>
+    </ul>
+</body>
+</html>
