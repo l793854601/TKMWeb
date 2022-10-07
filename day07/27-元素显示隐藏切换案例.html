@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 隐藏元素 */
+            display: none;
+        }
+
+        /* 当father hover时，son的样式 */
+        .father:hover .son {
+            /* 显示元素 */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

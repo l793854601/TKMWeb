@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+
+            /* 边框圆角 */
+            /* 赋值规则：从左上角开始赋值，然后顺时针赋值，没有赋值的看对角 */
+            /* border-radius: 30px; */
+            /* border-radius: 30px 50px; */
+            /* border-radius: 30px 50px 100px; */
+            border-radius: 30px 50px 100px 150px;
+
+            /* 使用边框圆角，将控件变成圆形 */
+            /* border-radius: 200px; */
+            /* border-radius: 50%; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

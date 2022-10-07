@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 400px;
+            background-color: pink;
+        }
+
+        img {
+            /* 方法1：修改对齐方式 */
+            /* vertical-align: bottom; */
+
+            /* 方法2：转换为块元素（前提是图片只占一行） */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/product.png" alt="">
+    </div>
+</body>
+</html>

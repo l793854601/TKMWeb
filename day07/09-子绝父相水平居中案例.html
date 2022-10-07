@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .son {
+            position: absolute;
+            top: 0;
+            /* 子元素向右边偏移父元素宽度的一半 */
+            left: 50%;
+            /* 子元素向左移动自己宽度的一半 */
+            /* 可以实现，但子盒子修改了宽度，则需要重新计算margin-left */
+            /* margin-left: 100px; */
+            /* margin-left取值的百分比相对于父元素 */
+            /* margin-left: -100%; */
+            /* 沿着x轴负方向始终移动自己宽度的一半，子盒子宽度变化不需要更改代码 */
+            transform: translateX(-50%);
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

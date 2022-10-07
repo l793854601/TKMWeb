@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+        }
+
+        .red {
+            /* 相对定位 */
+            position: relative;
+            left: 0;
+            top: 0;
+            background-color: red;
+
+            /* 不设置默认为0 */
+            z-index: 1;
+        }
+
+        .green {
+            /* 绝对定位 */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: green;
+
+            z-index: 2;
+        }
+
+        .blue {
+            /* 固定定位 */
+            position: fixed;
+            left: 200px;
+            top: 200px;
+            background-color: blue;
+
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</body>
+</html>

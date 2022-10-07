@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .son {
+            position: absolute;
+            /* 水平向左移动父元素的50% */
+            left: 50%;
+            /* 垂直向下移动父元素的50% */
+            top: 50%;
+            /* 单独写水平、垂直的transform，下方会覆盖上方的（属性覆盖） */
+            /* transform: translateX(-50%); */
+            /* transform: translate(-50%); */
+            /* 水平向右、垂直向上移动自身的50% */
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

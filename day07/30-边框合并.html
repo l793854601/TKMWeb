@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            /* 使用css设置表格的宽高 */
+            width: 400px;
+            height: 400px;
+            /* 使用css设置表格的边框 */
+            border: 1px solid red;
+            /* 合并表格内元素之间的分割线 */
+            /* 此属性是给table设置的，不是给table内元素设置的 */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            /* 使用css设置表格内元素（th、td）的边框 */
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h3>线段与移动开发学员学习情况</h3></caption>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>成绩</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>小姐姐</td>
+                <td>女</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>小哥哥</td>
+                <td>男</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>小可爱</td>
+                <td>女</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总成绩</td>
+                <td colspan="3">300</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

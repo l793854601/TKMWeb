@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 2.将盒子宽高设置为0 */
+            width: 0px;
+            height: 0px;
+            background-color: pink;
+
+            /* 三角形的高为下边框的宽度 */
+            /* 三角形的宽为左边框宽度+右边框宽度 */
+            /* 1.首先构造不同访问的四个边框，并设置边框宽度、边框颜色 */
+            /* 将对角边框高度设为0 */
+            border-top: 0px solid transparent;
+            border-right: 100px solid transparent;
+            /* 3.选择其中一个边框，其他边框的颜色改为透明 */
+            border-bottom: 200px solid blue;
+            border-left: 100px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

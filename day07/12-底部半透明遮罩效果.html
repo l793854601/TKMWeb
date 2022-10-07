@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 1226px;
+            margin: 0 auto;
+        }
+
+        .box .mask {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* 必须设置宽度，因为绝对布局会的元素已脱标，具有行内块元素的特点（不设置宽高，不会显示出来） */
+            /* 推荐设置宽度为100%，即父元素的宽度 */
+            width: 100%;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/bg.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

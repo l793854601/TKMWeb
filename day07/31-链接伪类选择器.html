@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 未访问过的样式 */
+        a:link {
+            color: red;
+        }
+        /* 已访问过的样式 */
+        a:visited {
+            color: yellowgreen;
+        }
+
+        /* 鼠标悬停的样式 */
+        a:hover {
+            color: blueviolet;
+        }
+
+        /* 鼠标按下的状态 */
+        a:active {
+            color: turquoise;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        div:hover {
+            background-color: yellowgreen;
+        }
+
+        div:active {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">我是a标签</a>
+    <div>我是div标签</div>
+</body>
+</html>
