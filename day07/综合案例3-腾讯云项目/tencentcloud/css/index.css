@@ -79,6 +79,9 @@ a {
 .banner {
     background-color: #181c28;
     height: 480x;
+}
+
+.banner .wrapper {
     background-image: url(../images/banner.png);
 }
 
