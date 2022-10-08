@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 40px;
+    background-color: #2b303b;
+}
+
+.header .left {
+    float: left;
+    position: relative;
+    height: 40px;
+}
+
+.header .left img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .right {
+    float: right;
+    height: 40px;
+}
+
+.header .right ul li {
+    float: left;
+    height: 40px;
+}
+
+.header .right ul li a {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.header .right ul li span {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* 轮播图 */
+.banner {
+    background-color: #181c28;
+    height: 480x;
+    background-image: url(../images/banner.png);
+}
+
+.banner .left {
+    width: 250px;
+    height: 480px;
+    background-color: #1b2a3f;
+}
+
+.banner .left ul {
+    padding-top: 52px;
+    padding-left: 20px;
+    padding-right: 22px;
+}
+
+.banner .left ul li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.banner .left ul span {
+    float: right;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* 公告 */
+.notice {
+    height: 150px;
+    text-align: center;
+}
+
+.notice h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.notice p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.box .wrapper {
+    height: 460px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.box .left {
+    float: left;
+    height: 460px;
+}
+
+.box .left .container {
+    margin-top: 45px;
+    margin-left: 50px;
+}
+
+.box .left .container h2 {
+    font-size: 25px;
+    color: #000;
+}
+
+.box .left .container hr {
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    margin-top: 7px;
+    background-color: #ccc;
+}
+
+.box .left .container p {
+    display: inline-block;
+    width: 400px;
+    line-height: 30px;
+    font: 15px;
+    color: #666;
+}
+
+.box .left .container .learning {
+    display: inline-block;
+    margin-top: 10px;
+    width: 164px;
+    height: 49px;
+    border: 1px solid #ffa500;
+
+    line-height: 49px;
+    text-align: center;
+    font: 16px;
+    color: #000;
+}
+
+.box .right {
+    float: right;
+    
+    width: 580px;
+    height: 460px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.box .right img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 139px;
+    padding-top: 32px;
+    height: 400px;
+    background-color: #2e3033;
+}
+
+.footer .left {
+    float: left;
+    height: 400px;
+}
+
+.footer .left dl {
+    float: left;
+    width: 200px;
+}
+
+.footer .left dl dt {
+    line-height: 28px;
+    font-size: 14px;
+    color: #eee;
+}
+
+.footer .left dl dd a {
+    line-height: 19px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.footer .right {
+    float: right;
+    height: 400px;
+}
+
+.footer .right p {
+    font-size: 10px;
+    color: #ccc;
+    line-height: 20px;
+}
+
+.footer .right a {
+    display: inline-block;
+    margin-top: 14px;
+    width: 190px;
+    height: 36px;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+}
