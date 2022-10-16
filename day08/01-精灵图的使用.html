@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 24px;
+            height: 24px;
+            /* 便宜量为图片左上角的位置，因此需要取负值，让图片往左上移动，从而取到对应位置的小图 */
+            background: url(./images/taobao.png) no-repeat 0 -264px;
+        }
+
+        .two {
+            width: 24px;
+            height: 22px;
+
+            background: url(./images/taobao.png) no-repeat 0 -44px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

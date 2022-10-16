@@ -1,0 +1,184 @@
+/* 首页样式 */
+/* --------------网站入口：xtx-entry */
+.xtx-entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.xtx-entry .container {
+    position: relative;
+    height: 500px;
+    background: url(../uploads/banner_1.png)
+}
+
+.xtx-entry .container .category {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    float: left;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.xtx-entry .container .category li {
+    position: relative;
+    height: 50px;
+    padding-left: 36px;
+    line-height: 50px;
+
+}
+
+.xtx-entry .container .category li:hover {
+    background-color: #27ba9b;
+}
+
+.xtx-entry .container .category a {
+    color: #fff;
+}
+
+.xtx-entry .container .category a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.xtx-entry .container .category a::after {
+    content: "";
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    width: 6px;
+    height: 11px;
+    background: url(../images/sprites.png) no-repeat -80px -110px;
+}
+
+.xtx-entry .container .prev {
+    position: absolute;
+    left: 260px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2) url(../images/sprites.png) no-repeat 16px -60px;
+}
+
+.xtx-entry .container .next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2) url(../images/sprites.png) no-repeat -24px -60px;
+}
+
+.xtx-entry .container .indicator {
+    position: absolute;
+    left: 50%;
+    left: 680px;
+    bottom: 31px;
+    width: 110px;
+    height: 10px;
+}
+
+.xtx-entry .container .indicator li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.43);
+}
+
+.xtx-entry .container .indicator .active {
+    background-color: #fff;
+}
+
+.xtx-entry .container .indicator li:last-child {
+    margin-right: 0;
+}
+
+
+/* --------------新鲜好物：xtx-new-goods */
+.xtx-new-goods {
+    height: 520px;
+}
+
+.xtx-new-goods .goods-header {
+    height: 115px;
+    line-height: 115px;
+}
+
+.xtx-new-goods .goods-header h2 {
+    height: 115px;
+    font-weight: 400;
+    font-size: 29px;
+}
+
+.xtx-new-goods .goods-header h2 span {
+    font-size: 16px;
+    color: #999;
+}
+
+.xtx-new-goods .goods-header a {
+    font-size: 16px;
+    color: #999;
+}
+
+.xtx-new-goods .goods-header a::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    background: url(../images/sprites.png) no-repeat 0 -109px;
+}
+
+.xtx-new-goods .goods-list {
+    height: 405px;
+}
+
+.xtx-new-goods .goods-list li {
+    float: left;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+}
+
+.xtx-new-goods .goods-list li:nth-child(4) {
+    margin-right: 0;
+}
+
+.xtx-new-goods .goods-list li a img {
+    width: 100%;
+}
+
+.xtx-new-goods .goods-list li a h3 {
+    margin-top: 22px;
+    height: 30px;
+    text-align: center;
+    line-height: 1;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.xtx-new-goods .goods-list li a p {
+    text-align: center;
+    line-height: 1;
+    color: #9a2e1f;
+    font-size: 23px;
+}
+
+.xtx-new-goods .goods-list li a p span {
+    font-size: 17px;
+}
+
+
+

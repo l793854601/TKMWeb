@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            background: url(./images/1.jpg) no-repeat;
+        }
+
+        div:nth-child(2) {
+            background-size: 400px 300px;
+        }
+
+        div:nth-child(3) {
+            background-size: 100% 100%;
+        }
+
+        div:nth-child(4) {
+            background-size: contain;
+            background-position: center center;
+        }
+
+        div:nth-child(5) {
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

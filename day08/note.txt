@@ -1,0 +1,116 @@
+精灵图：
+场景：项目中将多张小图片，合并成一张大图片，这张大图片称之为精灵图
+优点：减少服务器发送次数，减轻服务器的压力，提高页面加载速度
+例如：需要在网页中展示8张小图片
+8张小图片分别发送->发送8次
+合成一张精灵图发送->发送1次
+
+精灵图的使用步骤：
+创建一个盒子
+通过PxCook量取小图片的大小，将小图片的宽度设置给盒子
+将精灵图设置为盒子的背景图片
+通过PxCook测量小图片左上角坐标，分别取负值设置给盒子的background-position: x y
+
+
+背景图片大小：
+语法：background-size: 宽度 高度
+取值：
+数字+px：简单方便，常用
+百分比：相对于当前盒子自身的宽高百分比
+contain：包含，将背景图片等比例缩放，直到不会超出盒子的最大（图片可以完全显示，盒子可能会留白）
+cover：覆盖，将图片等比例缩放，直到刚好填满整个盒子没有空白（盒子不会留白，但图片可能不会显示全）
+
+
+background连写拓展
+完整连写：background: color image repeat position/size; 
+
+
+文字阴影：
+属性名：text-shadow
+取值：
+h-shadow：必须，水平偏移量，允许负值
+v-shadow:必须，锤子和偏移量，允许负值
+blur：可选，模糊度
+color：可选，阴影颜色
+
+阴影可以叠加设置，每组阴影取值之间以逗号隔开
+
+
+盒子阴影：
+属性名：box-shadow
+取值：
+h-shadow：必须，水平偏移量，允许负值
+v-shadow：必须，垂直偏移量，允许负值
+blur：可选，模糊度
+spread：可选，阴影扩大
+color：可选，阴影效果
+inset：可选，将阴影改为内部阴影
+
+
+过渡：
+作用：让元素的样式慢慢的变化，常配合hover使用，增强网页交互体验
+属性名：transition
+常见取值：
+过渡的属性： all：所有能过渡的属性都能过渡、具体属性名如：width，只有width有过渡
+过渡的时长：数字+s（秒）
+
+注意点：
+过渡需要默认状态和hover状态样式不同，才能有过渡效果
+transition属性给需要过渡的元素本身加
+transition属性设置在不同状态中，效果不同：
+给默认状态设置，鼠标移入移除都有过渡效果
+给hover状态设置，鼠标移入有过渡效果，移除没有过渡效果
+
+
+SEO（Search Engine Optimization）：搜索引擎优化
+作用：让网站在搜索引擎上的排名靠前
+提升SEO的常见方法：
+竞价排名
+将网页制作成html后缀
+标签语义化（在核实的地方使用合适的标签）
+
+SEO三大标签：
+title：网页标题标签
+description：网页描述标签
+keywords：网页关键字标签
+
+
+有语义的布局标签：
+在HTML新版本中，推出了一些有语义的布局标签，可以增强网页的语义化
+标签：
+header：网页头部
+nav：网页导航
+footer：网页底部
+aside：网页侧边栏
+section：网页区块
+article：网页文章
+注意点：
+以上标签显示特点和div一致，但是比div多了不同的语义
+
+
+ico图标设置：
+场景：显示在标签页标题左侧的小图标，习惯使用.ico格式的图标
+
+
+版心：
+场景：把页面的主体内容约束在网页中间
+作用：让不同大小的屏幕都能看到页面的主体内容
+注意点：版心类名常用：container、wrapper、w等
+代码：
+.wrapper {
+    版心的宽度
+    width: 1200px;
+    居中
+    margin: 0 auto;
+}
+
+
+CSS书写顺序（书写规范、专业性）：
+不同CSS书写顺序会影响浏览器的渲染性能，推荐使用专业的书写顺序习惯
+顺序：
+1.布局属性：display、position、float、clear、visibity、owerflow
+2.盒子模型+背景：width、height、margin、padding、border、background
+3.文本内容属性：color、font、text-decoration、text-align、line-height
+4.点缀属性：cursor、border-radius、text-shadow、box-shadow
+注意点：
+开发中推荐多用类+后代，但不是层级越多越好，一个选择器中的类选择器的个数推荐不要超过3个

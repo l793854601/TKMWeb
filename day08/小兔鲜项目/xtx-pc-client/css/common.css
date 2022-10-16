@@ -1,0 +1,220 @@
+/* 该网站中多个网页相同模块的重复样式，如：头部、底部 */
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* 版心的公共类 */
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* --------------快捷菜单模块：xtx-shortcut */
+.xtx-shortcut {
+    /* 通栏，因此只设置高度即可，不用设置宽度 */
+    height: 52px;
+    background-color: #333;
+}
+
+.xtx-shortcut .container {
+    height: 100%;
+}
+
+.xtx-shortcut ul li {
+    line-height: 52px;
+}
+
+.xtx-shortcut ul a {
+    margin: 0 16px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.xtx-shortcut ul span {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.xtx-shortcut li a:last-child {
+    /* 去掉最后一个a标签的右侧margin */
+    margin-right: 0;
+}
+
+/* 通过伪元素，给最后一个a标签添加手机图标 */
+.xtx-shortcut li a:last-child::before {
+    /* 伪元素默认为行内元素，想要改变大小，则需要修改为行内块元素 */
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 16px;
+    /* 微调 */
+    margin-top: -3px;
+    margin-right: 8px;
+    background: url(../images/sprites.png) no-repeat -160px -70px;
+    /* 垂直居中 */
+    vertical-align: middle;
+}
+
+/* --------------主导航模块：xtx-main-nav */
+.xtx-main-nav {
+    height: 130px;
+    background-color: #fff;
+}
+
+.xtx-main-nav .container {
+    padding-top: 30px;
+    height: 130px;
+    /* 自动内减 */
+    box-sizing: border-box;
+}
+
+.xtx-main-nav .logo {
+    width: 207px;
+    height: 70px;
+    margin-left: 25px;
+}
+
+.xtx-main-nav .logo a {
+    display: block;
+    height: 70px;
+    background: url(../images/logo.png);
+    /* 修改背景图尺寸 */
+    background-size: 100% 100%;
+    /* 隐藏a标签中的文字 */
+    font-size: 0;
+}
+
+.xtx-main-nav nav  {
+    margin-left: 16px;
+}
+
+.xtx-main-nav nav li {
+    float: left;
+    height: 70px;
+    margin: 0 24px;
+    line-height: 70px;
+}
+
+.xtx-main-nav nav a:hover {
+    color: #27ba9b;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.xtx-main-nav .search {
+    position: relative;
+    width: 172px;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 58px;
+}
+
+.xtx-main-nav .search::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/sprites.png) no-repeat -80px -70px;
+}
+
+.xtx-main-nav .search input {
+    width: 100%;
+    height: 100%;
+    padding-left: 31px;
+    border-bottom: 2px solid #e7e7e7;
+    line-height: 0;
+}
+
+.xtx-main-nav .cart {
+    position: relative;
+    
+    width: 23px;
+    height: 23px;
+    margin-top: 28px;
+    margin-left: 15px;
+    background: url(../images/sprites.png) -120px -70px;
+}
+
+.xtx-main-nav .cart span {
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+
+    width: 20px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #e26237;
+
+    text-align: center;
+    line-height: 15px;
+    font-size: 13px;
+    color: #fff;
+}
+
+/* --------------宣传服务：xtx-service */
+.xtx-service {
+    height: 174px;
+    background-color: #333;
+}
+
+.xtx-service .container {
+    width: 1393px;
+    height: 173px; 
+    border-bottom: 1px solid #434343;
+}
+
+.xtx-service .container a {
+    float: left;
+    width: 33.33%;
+    height: 173px;
+
+    font-size: 28px;
+    color: #fff;
+    line-height: 173px;
+    text-align: center;
+}
+
+.xtx-service .container a::before {
+    content: "";
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 19px;
+    background: url(../images/sprites.png) 0 0;
+    vertical-align: middle;
+}
+
+.xtx-service a:nth-child(2)::before {
+    background-position: -130px 0;
+}
+
+.xtx-service a:nth-child(3)::before {
+    background-position: -64px 0;
+}
+
+/* --------------版权信息：xtx-copyright */
+.xtx-copyright {
+    height: 168px;
+    background-color: #333;
+}
+
+.xtx-copyright .container {
+    height: 168px;
+    box-sizing: border-box;
+    /* 不使用margin-top，防止margin塌陷 */
+    padding-top: 41px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+.xtx-copyright p:first-child {
+    height: 35px;
+}
+
+.xtx-copyright a {
+    color: #999;
+}
