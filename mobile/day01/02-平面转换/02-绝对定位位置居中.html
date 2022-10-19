@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .father {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            max-width: 100px auto;
+            border: 1px solid #000;
+        }
+
+        .son {
+            position: absolute;
+            /* 向左距father宽度50%的距离 */
+            left: 50%;
+            /* 向上距father高度50%的距离 */
+            top: 50%;
+
+            /* 使用margin调整自身的位置 */
+            /* margin-left: -100px;
+            margin-top: -50px; */
+
+            /* 使用transform调整自身的位置，较为灵活 */
+            /* 向上、向左移动自身高度、宽度50%的距离 */
+            transform: translate(-50%, -50%);
+
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

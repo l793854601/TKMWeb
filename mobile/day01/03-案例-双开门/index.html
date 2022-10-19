@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .center-control {
+            width: 1366px;
+            height: 600px;
+            margin: 0 auto;
+            background: url(./images/bg.jpg);
+
+            /* 隐藏超出的子元素 */
+            overflow: hidden;
+        }
+
+        .center-control::before,
+        .center-control::after {
+            content: "";
+            float: left;
+            width: 50%;
+            height: 100%;
+            background: url(./images/fm.jpg) no-repeat 0 0;
+            transition: all 0.5s;
+        }
+
+        .center-control::after {
+            background-position: 100% 0;
+        }
+
+        .center-control:hover::before {
+            transform: translate(-100%);
+        }
+
+        .center-control:hover::after {
+            transform: translate(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="center-control">
+
+    </div>
+</body>
+</html>
