@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: peachpuff;
+            /* 加上transition会有动画效果 */
+            transition: all 2s;
+        }
+
+        .box:hover {
+            /* rotate：平面旋转 */
+            /* deg：单位，角度 */
+            /* 正数为顺时针，负数为逆时针 */
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

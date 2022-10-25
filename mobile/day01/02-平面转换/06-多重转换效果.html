@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 800px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        img {
+            width: 200px;
+            transition: all 2s;
+        }
+
+        .box:hover img {
+            /* 一边走一边旋转 */
+            /* 将transform作为复合属性，先写translateX，再写rotate */
+            transform: translateX(600px) rotate(360deg);
+
+            /* 不能先写rotate，因为rotate会改变坐标轴向，进而影响translate位移效果 */
+            /* transform: rotate(360deg) translateX(600px); */
+
+            /* 层叠性，因此不能分开写transform */
+            /* transform: rotate(360deg); */
+            /* transform: translateX(600px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../images/tyre.png"></div>
+    </div>
+</body>
+</html>

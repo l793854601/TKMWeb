@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .box {
+            width: 249px;
+            height: 210px;
+            margin: 50px auto;
+        }
+
+        .box p {
+            color: #3b3b3b;
+            padding: 10px 10px 0 10px;
+        }
+
+        .pic {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pic::after {
+            content: '';
+            /* 定位，居中 */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -29px;
+            margin-left: -29px;
+
+            /* 默认放大 */
+            transform: scale(5);
+
+            /* 透明 */
+            opacity: 0;
+
+            width: 58px;
+            height: 58px;
+            background: url(../images/play.png);
+
+            /* 动画效果 */
+            transition: all 0.5s;
+        }
+
+        li:hover .pic::after {
+            /* 不透明 */
+            opacity: 1;
+            /* 不缩放 */
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="pic"><img src="../images/party.jpeg" alt=""></div>
+                <p>【和平精英】”初火“音乐概念片：四圣觉醒...</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

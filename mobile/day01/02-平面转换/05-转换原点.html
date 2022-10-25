@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: all 2s;
+            /* 旋转中心点 */
+            /* 方向：top left bottom right center */
+            /* 像素值：距离top、left的距离 */
+            /* transform-origin: right bottom; */
+            transform-origin: 30px 50px;
+        }
+
+        .box:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
